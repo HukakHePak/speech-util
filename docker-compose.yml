@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  static:
+    build:
+      context: .
+    ports:
+      - "5005:5005"
+    image: speech

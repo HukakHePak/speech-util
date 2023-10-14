@@ -1,15 +1,19 @@
 {
-  "name": "test-speech",
+  "name": "speech-util",
   "version": "1.0.0",
-  "description": "test speech engines for wotk server",
+  "description": "test speech engines for working server",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "pkg": "npx pkg -C GZip -t node14-win -o app ./src/index.js ",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "expressjs": "^1.0.1",
     "node-gtts": "^2.0.2"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
   }
 }
