@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "pkg": "npx pkg -C GZip -t node14-win -o app ./src/index.js ",
+    "pkg": "npx pkg -C GZip -t node16-linuxstatic -o app ./src/index.js ",
     "build": "webpack"
   },
   "author": "",

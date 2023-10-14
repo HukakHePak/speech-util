@@ -1,16 +1,15 @@
 version: '3.9'
 services:
-  static:
+  app:
     build:
       context: .
-    image: speech-tts
+    image: speech-util
     container_name: speech
-    ports:
-      - "5005:5005"
+    environment:
+      MODE: production
+      PORT: 5005
     networks: 
       - nginx-network
-
-    version: '3.9'
       
 networks: 
   nginx-network:
