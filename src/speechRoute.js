@@ -4,6 +4,7 @@ function speechRoute(lang) {
 
   router.get("/", function (req, res) {
     res.set({ "Content-Type": "audio/mpeg" });
+    res.set('Cache-control', 'public, max-age=3600');
     speech.stream(req.query.text).pipe(res);
   });
 
