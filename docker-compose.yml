@@ -8,6 +8,8 @@ services:
     environment:
       MODE: production
       PORT: 5005
+    env_file: 
+      - .env
     networks: 
       - nginx-network
       
